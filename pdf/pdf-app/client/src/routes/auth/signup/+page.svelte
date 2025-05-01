@@ -30,10 +30,10 @@
 	>
 		<div class="p-4 sm:p-7">
 			<div class="text-center">
-				<h1 class="block text-2xl font-bold text-gray-800">Sign Up</h1>
+				<h1 class="block text-2xl font-bold text-white">Sign Up</h1>
 				<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
 					Already have an account?
-					<a class="text-blue-600 decoration-2 hover:underline font-medium" href="/auth/signin">
+					<a class="text-blue-400 decoration-2 hover:underline font-medium" href="/auth/signin">
 						Sign In Here
 					</a>
 				</p>

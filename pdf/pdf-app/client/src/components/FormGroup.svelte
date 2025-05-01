@@ -4,7 +4,7 @@
 
 <div>
 	<div class="flex justify-between items-center">
-		<label for="" class="block text-sm mb-2">{label}</label>
+		<label for="" class="block text-sm mb-2 text-white">{label}</label>
 	</div>
 	<div class="relative">
 		<slot />

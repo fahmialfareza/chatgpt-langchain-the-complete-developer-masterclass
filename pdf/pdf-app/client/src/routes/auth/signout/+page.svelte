@@ -23,7 +23,7 @@
 
 <main class="w-full max-w-md mx-auto p-6">
 	<div
-		class="mt-7 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700"
+		class="mt-7 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700 text-white"
 	>
 		<div class="p-4 sm:p-7">
 			<div class="text-center">

@@ -43,16 +43,13 @@
 
 					<tbody class="divide-y divide-gray-200 dark:divide-gray-700">
 						{#each documents as document}
-							<tr class="hover:bg-gray-100 dark:hover:bg-gray-700">
-								<td
-									class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200"
-									>{document.name}</td
-								>
-								<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200"
-									>{document.id}</td
-								>
+							<tr
+								class="hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-800 hover:text-gray-200 dark:hover:text-gray-200"
+							>
+								<td class="px-6 py-4 whitespace-nowrap text-sm font-medium">{document.name}</td>
+								<td class="px-6 py-4 whitespace-nowrap text-sm">{document.id}</td>
 								<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-									<a class="text-blue-500 hover:text-blue-700" href="/documents/{document.id}"
+									<a class="text-blue-500 hover:text-blue-400" href="/documents/{document.id}"
 										>View</a
 									>
 								</td>

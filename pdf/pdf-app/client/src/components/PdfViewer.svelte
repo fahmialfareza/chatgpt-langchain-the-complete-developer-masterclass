@@ -3,7 +3,7 @@
 	import * as pdfjs from 'pdfjs-dist';
 
 	pdfjs.GlobalWorkerOptions.workerSrc =
-		'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.5.141/pdf.worker.min.js';
+		'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
 	export let url = '';
 	let canvasContainer: HTMLDivElement;
