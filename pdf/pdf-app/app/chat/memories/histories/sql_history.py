@@ -22,5 +22,11 @@ class SqlMessageHistory(BaseChatMessageHistory):
             content=message.content,
         )
 
+    def load_memory(self, k=None):
+        messages = self.get_messages()
+        if k:
+            messages = messages[-k:]
+        return messages
+
     def clear(self):
         pass

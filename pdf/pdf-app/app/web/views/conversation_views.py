@@ -2,6 +2,7 @@ from flask import Blueprint, g, request, Response, jsonify, stream_with_context
 from app.web.hooks import login_required, load_model
 from app.web.db.models import Pdf, Conversation
 from app.chat import build_chat, ChatArgs, Metadata
+from app.chat.tracing.langfuse import langfuse_handler
 
 bp = Blueprint("conversation", __name__, url_prefix="/api/conversations")
 
@@ -26,7 +27,7 @@ def create_conversation(pdf):
 @login_required
 @load_model(Conversation)
 def create_message(conversation):
-    input = request.json.get("input")
+    input_text = request.json.get("input")
     streaming = request.args.get("stream", False)
 
     pdf = conversation.pdf
@@ -49,7 +50,11 @@ def create_message(conversation):
 
     if streaming:
         return Response(
-            stream_with_context(chat.stream(input)), mimetype="text/event-stream"
+            stream_with_context(chat.stream(input_text)), mimetype="text/event-stream"
         )
     else:
-        return jsonify({"role": "assistant", "content": chat.run(input)})
+        result = chat.invoke(
+            {"input": input_text},
+            config={"callbacks": [langfuse_handler]},  # ✅ trace even for non-stream
+        )
+        return jsonify({"role": "assistant", "content": result.get("answer", "")})
