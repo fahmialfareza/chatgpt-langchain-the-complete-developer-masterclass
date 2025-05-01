@@ -11,7 +11,7 @@
       "module": "invoke",
       "args": ["dev"],
       "justMyCode": false,
-      "python": "/Users/fahmialfareza/.local/share/virtualenvs/pdf-7A9nRPvL/bin/python"
+      "python": "/Users/fahmialfareza/.local/share/virtualenvs/pdf-app-Q7y_3ghA/bin/python"
     },
     {
       "name": "Invoke Dev Worker",
@@ -20,7 +20,7 @@
       "module": "invoke",
       "args": ["devworker"],
       "justMyCode": false,
-      "python": "/Users/fahmialfareza/.local/share/virtualenvs/pdf-7A9nRPvL/bin/python"
+      "python": "/Users/fahmialfareza/.local/share/virtualenvs/pdf-app-Q7y_3ghA/bin/python"
     }
   ]
 }

@@ -9,7 +9,7 @@
       "type": "python",
       "request": "launch",
       "justMyCode": false,
-      "python": "/Users/fahmialfareza/.local/share/virtualenvs/local-do-files-tmOLl3aq/bin/python",
+      "python": "/Users/fahmialfareza/.local/share/virtualenvs/local-do-files-52PcDxJ-/bin/python",
       "program": "${workspaceFolder}/app.py"
     }
   ]
