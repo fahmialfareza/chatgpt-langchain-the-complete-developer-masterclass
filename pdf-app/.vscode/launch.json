@@ -1,0 +1,26 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Invoke Dev Server",
+      "type": "python",
+      "request": "launch",
+      "module": "invoke",
+      "args": ["dev"],
+      "justMyCode": false,
+      "python": "/Users/fahmialfareza/.local/share/virtualenvs/pdf-7A9nRPvL/bin/python"
+    },
+    {
+      "name": "Invoke Dev Worker",
+      "type": "python",
+      "request": "launch",
+      "module": "invoke",
+      "args": ["devworker"],
+      "justMyCode": false,
+      "python": "/Users/fahmialfareza/.local/share/virtualenvs/pdf-7A9nRPvL/bin/python"
+    }
+  ]
+}
